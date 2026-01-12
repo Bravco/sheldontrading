@@ -8,7 +8,7 @@
         }"
     >
         <template #description>
-            As a <b>funded $NQ scalper</b> and <b>founder of <ULink to="https://percentbet.com" target="_blank" class="text-info">@PercentBet</ULink></b>,
+            As a <b>funded $NQ scalper</b>,
             I specialize in small-range market movements rather than long swing trades.
             My trading philosophy prioritizes taking shorter high-probability reversals over emotional trend-chasing.
         </template>

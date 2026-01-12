@@ -44,7 +44,7 @@
 </template>
 
 <script lang="ts" setup>
-    const { data: posts } = await useAsyncData("home-posts", () =>
+    const { data: posts } = await useLazyAsyncData("home-posts", () =>
         queryCollection("blog").order("date", "DESC").limit(3).all()
     );
 </script>

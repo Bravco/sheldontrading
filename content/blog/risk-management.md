@@ -3,7 +3,7 @@ date: 2025-09-08
 minRead: 1
 title: Risk Management
 description: Trading is a game of probabilities.
-image: https://eq-cdn.equiti-me.com/website/images/16_Nov___Forex_risk_management_trading-20231106.original.jpg
+image: /images/content/risk-management.webp
 ---
 
 No matter your win rate, the odds of losing 10 trades in a row are higher than you think.

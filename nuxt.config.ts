@@ -16,7 +16,7 @@ export default defineNuxtConfig({
       title: "@sheldontrading",
       meta: [
         { name: "title", content: "@sheldontrading" },
-        { name: "description", content: "I am a funded $NQ scalper and founder of @PercentBet, focused on catching small, consistent moves rather than chasing large trends." },
+        { name: "description", content: "I am a funded $NQ scalper focused on catching small, consistent moves rather than chasing large trends." },
         { name: "keywords", content: "trading, trader, funded trader, portfolio" }
       ]
     }

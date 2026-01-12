@@ -30,15 +30,7 @@
 <script lang="ts" setup>
     const route = useRoute();
 
-    const { data: post } = await useAsyncData(route.path, () => queryCollection("blog").path(route.path).first());
-
-    if (!post.value) {
-        throw createError({
-            statusCode: 404,
-            statusMessage: "Page not found",
-            fatal: true
-        });
-    }
+    const { data: post } = await useLazyAsyncData(route.path, () => queryCollection("blog").path(route.path).first());
 
     const formatDate = (dateString: string) => new Date(dateString).toLocaleDateString("en-US", {
         year: "numeric",

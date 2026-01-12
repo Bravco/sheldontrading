@@ -3,7 +3,7 @@ date: 2025-09-08
 minRead: 1
 title: Psychology
 description: Keeping yourself accountable.
-image: https://eq-cdn.equiti-me.com/website/images/7_Oct___Trading_Psychology-20231003-095722.original.jpg
+image: /images/content/psychology.webp
 ---
 
 > Most traders don't fail because they have a bad strategy, but because their **psychology sucks**.

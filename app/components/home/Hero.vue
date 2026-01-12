@@ -38,8 +38,8 @@
                 :animate="{ scale: 1, opacity: 1, filter: 'blur(0px)' }"
                 :transition="{ duration: 0.6, delay: 0.3 }"
             >
-                I am a <b>funded $NQ scalper</b> and <b>founder of <ULink to="https://percentbet.com" target="_blank" class="text-info">@PercentBet</ULink></b>,
-                focused on catching small, consistent moves rather than chasing large trends.
+                I am a <b>funded $NQ scalper</b> focused on catching small,
+                consistent moves rather than chasing large trends.
             </Motion>
         </template>
 
