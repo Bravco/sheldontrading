@@ -3,7 +3,7 @@ date: 2025-09-08
 minRead: 2
 title: Candle Behaviour
 description: How candlesticks form, what OHLC represents, and what the idea of Power of 3 means.
-image: /images/content/candle-behaviour/candlesticks.webp
+image: /images/blog/candle-behaviour/candlesticks.webp
 ---
 
 ## Open High Low Close (OHLC / OLHC)
@@ -12,13 +12,13 @@ A candlestick shows how price moved during a specific timeframe.
 
 **Price is fractal** — each candle contains smaller moves from lower timeframes, e.g. a 1-hour candle is made up of 60 one-minute candles.
 
-![Open Low High Close](/images/content/candle-behaviour/olhc.webp)
+![Open Low High Close](/images/blog/candle-behaviour/olhc.webp)
 
 The body of the candle shows the open and a close.
 
 The wicks show the high and low where the price went, but failed to close there.
 
-![Open High Low Close](/images/content/candle-behaviour/ohlc.webp)
+![Open High Low Close](/images/blog/candle-behaviour/ohlc.webp)
 
 ## Power of 3 (AMD)
 
@@ -38,4 +38,4 @@ One thing you need to be aware of is that price will always manipulate into a PD
 
 This phase distributes the liquidity gathered during accumulation and manipulation, with other traders joining the move and driving price further in its direction.
 
-![Power of 3](/images/content/candle-behaviour/amd.webp)
+![Power of 3](/images/blog/candle-behaviour/amd.webp)

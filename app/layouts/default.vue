@@ -10,7 +10,7 @@
                     :ui="{ link: 'px-2 py-1' }"
                 >
                     <template #list-trailing>
-                        <ColorModeButton/>
+                        <ColorModeButton class="cursor-pointer"/>
                     </template>
                 </UNavigationMenu>
             </div>

@@ -3,14 +3,14 @@ date: 2025-09-08
 minRead: 1
 title: Risk Management
 description: Trading is a game of probabilities.
-image: /images/content/risk-management.webp
+image: /images/blog/risk-management.webp
 ---
 
 No matter your win rate, the odds of losing 10 trades in a row are higher than you think.
 
 Proper risk management is the only way to avoid liquidating your account.
 
-![Probability of losing X trades in a row](/images/content/risk-management/probability.webp)
+![Probability of losing X trades in a row](/images/blog/risk-management/probability.webp)
 
 Profitability is simply a net positive relationship between win rate and risk-to-reward ratio (RR).
 

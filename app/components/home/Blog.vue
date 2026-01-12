@@ -23,20 +23,16 @@
                 }"
             >
                 <template #footer>
-                    <UButton
+                    <ULink
                         :to="post.path"
-                        label="Read Article"
-                        size="xs"
-                        variant="link"
-                        class="px-0 gap-0"
+                        class="flex items-center text-sm font-medium text-primary"
                     >
-                        <template #trailing>
-                            <UIcon
-                                name="i-lucide-arrow-right"
-                                class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
-                            />
-                        </template>
-                    </UButton>
+                        Read Article
+                        <UIcon
+                            name="i-lucide-arrow-right"
+                            class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
+                        />
+                    </ULink>
                 </template>
             </UBlogPost>
         </UBlogPosts>

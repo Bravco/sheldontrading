@@ -3,7 +3,7 @@ date: 2025-09-08
 minRead: 1
 title: Strategy
 description: Combining what you have learned.
-image: /images/content/strategy/example1.webp
+image: /images/blog/strategy/example1.webp
 ---
 
 A strategy consists of a higher timeframe (HTF) key level paired with a lower timeframe (LTF) entry model.
@@ -26,8 +26,8 @@ The more confluences you stack, the higher the probability.
 
 ### Examples
 
-![Strategy Example 1](/images/content/strategy/example1.webp)
+![Strategy Example 1](/images/blog/strategy/example1.webp)
 
-![Strategy Example 2](/images/content/strategy/example2.webp)
+![Strategy Example 2](/images/blog/strategy/example2.webp)
 
-![Strategy Example 3](/images/content/strategy/example3.webp)
+![Strategy Example 3](/images/blog/strategy/example3.webp)
