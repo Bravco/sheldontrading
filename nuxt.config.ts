@@ -7,5 +7,18 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "motion-v/nuxt"
   ],
-  css: ["~/assets/css/main.css"]
+  css: ["~/assets/css/main.css"],
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: "en"
+      },
+      title: "@sheldontrading",
+      meta: [
+        { name: "title", content: "@sheldontrading" },
+        { name: "description", content: "I am a funded $NQ scalper and founder of @PercentBet, focused on catching small, consistent moves rather than chasing large trends." },
+        { name: "keywords", content: "trading, trader, funded trader, portfolio" }
+      ]
+    }
+  }
 })
