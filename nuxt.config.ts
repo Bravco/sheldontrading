@@ -22,7 +22,7 @@ export default defineNuxtConfig({
     }
   },
   image: {
-    provider: "netlify",
+    provider: process.env.NETLIFY ? "netlify" : "ipx",
     domains: ["sheldon.trading"]
   }
 })
