@@ -27,6 +27,7 @@
                         size="xs"
                         variant="ghost"
                         color="neutral"
+                        aria-label="Twitter"
                     />
                 </template>
             </UFooter>
