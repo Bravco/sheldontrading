@@ -17,9 +17,7 @@
 
     const nextTheme = computed(() => (colorMode.value === "dark" ? "light" : "dark"));
 
-    const switchTheme = () => {
-        colorMode.preference = nextTheme.value;
-    }
+    const switchTheme = () => colorMode.preference = nextTheme.value;
 
     const startViewTransition = (event: MouseEvent) => {
         if (!document.startViewTransition) {

@@ -89,7 +89,7 @@
                     width="250"
                     height="250"
                     loading="lazy"
-                    class="aspect-square object-cover rounded-lg border border-muted"
+                    class="aspect-square object-cover rounded-lg border border-default"
                     :class="index % 2 === 0 ? '-rotate-2' : 'rotate-2'"
                 />
             </Motion>

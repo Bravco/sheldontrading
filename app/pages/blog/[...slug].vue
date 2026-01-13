@@ -13,7 +13,7 @@
             <NuxtImg
                 :src="post.image"
                 :alt="post.title"
-                class="w-full h-75 object-cover object-center rounded-lg"
+                class="w-full h-75 object-cover object-center rounded-lg border border-default"
             />
             <h1 class="text-4xl text-center font-medium max-w-3xl mx-auto mt-4">{{ post.title }}</h1>
             <p class="text-muted text-center max-w-2xl mx-auto">{{ post.description }}</p>
@@ -23,6 +23,7 @@
                 v-if="post.body"
                 :value="post"
             />
+            <UContentSurround :surround/>
         </UPageBody>
     </UPage>
 </template>
@@ -30,7 +31,13 @@
 <script lang="ts" setup>
     const route = useRoute();
 
-    const { data: post } = await useLazyAsyncData(route.path, () => queryCollection("blog").path(route.path).first());
+    const { data: post } = await useLazyAsyncData(route.path, () =>
+        queryCollection("blog").path(route.path).first()
+    );
+
+    const { data: surround } = await useLazyAsyncData(`${route.path}-surround`, () =>
+        queryCollectionItemSurroundings("blog", route.path, { fields: [ "description" ] })
+    );
 
     const formatDate = (dateString: string) => new Date(dateString).toLocaleDateString("en-US", {
         year: "numeric",

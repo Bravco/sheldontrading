@@ -24,6 +24,7 @@
                         variant="naked"
                         :to="post.path"
                         v-bind="post"
+                        :ui="{ header: 'border border-default' }"
                     />
                 </Motion>
             </UBlogPosts>
