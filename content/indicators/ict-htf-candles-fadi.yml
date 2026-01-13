@@ -1,0 +1,5 @@
+author: fadi
+title: ICT HTF Candles
+description: Plotting a configurable higher timeframe on current chart's timeframe helps visualize price movement without changing timeframes. It also plots FVG and Volume Imbalance on the higher timeframe for easier visualization.
+image: /images/indicators/ict-htf-candles-fadi.webp
+url: https://www.tradingview.com/script/CfqnRBHd-ICT-HTF-Candles-fadi/

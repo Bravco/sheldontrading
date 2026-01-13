@@ -6,6 +6,7 @@ export default defineContentConfig({
             type: "data",
             source: "indicators/*.yml",
             schema: z.object({
+                author: z.string().nonempty(),
                 title: z.string().nonempty(),
                 description: z.string().nonempty(),
                 image: z.string().nonempty().editor({ input: "media" }),

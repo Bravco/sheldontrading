@@ -2,7 +2,7 @@
     <UPage>
         <UPageHero
             title="Designing Indicators, Building Strategies."
-            description="Here are some custom TradingView indicators I've created to simplify trading."
+            description="Here are some custom TradingView indicators that I use to simplify trading."
             :ui="{
                 title: '!mx-0 text-left',
                 description: '!mx-0 text-left',
@@ -23,7 +23,6 @@
                     :description="indicator.description"
                     :to="indicator.url"
                     target="_blank"
-                    icon="i-lucide-candlestick-chart"
                     orientation="horizontal"
                     variant="naked"
                     class="group"
@@ -33,6 +32,11 @@
                         :alt="indicator.title"
                         class="w-full h-48 object-cover rounded-lg border border-muted"
                     />
+                    <template #leading>
+                        <span class="text-xs text-muted">
+                            Created by <span class="font-medium">{{ indicator.author }}</span>
+                        </span>
+                    </template>
                     <template #footer>
                         <ULink  
                             :to="indicator.url"
