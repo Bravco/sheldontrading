@@ -20,5 +20,9 @@ export default defineNuxtConfig({
         { name: "keywords", content: "trading, trader, funded trader, portfolio" }
       ]
     }
+  },
+  image: {
+    provider: "netlify",
+    domains: ["sheldon.trading"]
   }
 })
