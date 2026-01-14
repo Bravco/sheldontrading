@@ -1,6 +1,6 @@
 ---
 date: 2025-09-08
-minRead: 2
+minRead: 3
 title: Premium & Discount Arrays
 description: Selling in premium and buying in discount.
 image: /images/blog/pd-arrays/premium-discount.webp

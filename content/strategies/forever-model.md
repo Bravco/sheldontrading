@@ -1,4 +1,6 @@
 ---
+date: 2025-09-08
+minRead: 2
 tags: [
     { label: Smart Money Concepts },
     { label: NYAM, color: error }

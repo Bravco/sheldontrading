@@ -1,6 +1,6 @@
 ---
 date: 2025-09-08
-minRead: 1
+minRead: 2
 title: Psychology
 description: Keeping yourself accountable.
 image: /images/blog/psychology.webp

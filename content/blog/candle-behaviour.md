@@ -1,6 +1,6 @@
 ---
 date: 2025-09-08
-minRead: 2
+minRead: 3
 title: Candle Behaviour
 description: How candlesticks form, what OHLC represents, and what the idea of Power of 3 means.
 image: /images/blog/candle-behaviour/candlesticks.webp

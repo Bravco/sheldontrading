@@ -1,6 +1,6 @@
 ---
 date: 2025-09-08
-minRead: 2
+minRead: 3
 title: Liquidity
 description: The reason why the market moves.
 image: /images/blog/liquidity/liquidity.webp

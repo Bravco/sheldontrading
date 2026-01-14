@@ -27,6 +27,8 @@ export default defineContentConfig({
             type: "page",
             source: "strategies/*.md",
             schema: z.object({
+                date: z.date(),
+                minRead: z.number(),
                 tags: z.array(z.object({
                     label: z.string(),
                     color: z.enum([

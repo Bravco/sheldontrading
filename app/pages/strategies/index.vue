@@ -24,6 +24,7 @@
                         variant="naked"
                         :to="strategy.path"
                         v-bind="strategy"
+                        :date="undefined"
                         :ui="{ header: 'border border-default' }"
                     >
                         <template #badge>

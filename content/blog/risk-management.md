@@ -1,6 +1,6 @@
 ---
 date: 2025-09-08
-minRead: 1
+minRead: 2
 title: Risk Management
 description: Trading is a game of probabilities.
 image: /images/blog/risk-management.webp

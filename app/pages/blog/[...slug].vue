@@ -42,10 +42,4 @@
     const { data: surround } = await useAsyncData(`${route.path}-surround`, () =>
         queryCollectionItemSurroundings("blog", route.path, { fields: [ "description" ] })
     );
-
-    const formatDate = (dateString: string) => new Date(dateString).toLocaleDateString("en-US", {
-        year: "numeric",
-        month: "short",
-        day: "numeric" 
-    });
 </script>

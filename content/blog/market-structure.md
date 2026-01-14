@@ -1,6 +1,6 @@
 ---
 date: 2025-09-08
-minRead: 2
+minRead: 3
 title: Market Structure
 description: Reading the price action and determining the market trend.
 image: /images/blog/market-structure/trends.webp
