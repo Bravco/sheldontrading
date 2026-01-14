@@ -1,6 +1,6 @@
 <template>
     <UPageSection
-        title="Trading Experience"
+        title="Experience"
         :ui="{
             container: '!p-0 gap-4 sm:gap-4',
             title: 'text-left text-xl sm:text-xl lg:text-2xl font-medium',
@@ -25,11 +25,12 @@
                         <div class="inline-flex items-center gap-1">
                             <span class="text-highlighted font-medium">{{ item.company.name }}</span>
                             <NuxtImg
-                                :src="item.company.logo"
+                                :src="item.company.logo.src"
                                 :alt="item.company.name"
-                                width="32"
-                                height="32"
+                                :width="item.company.logo.width"
+                                :height="item.company.logo.height"
                                 loading="lazy"
+                                class="max-w-18 max-h-8 object-contain"
                             />
                         </div>
                     </ULink>
@@ -46,17 +47,38 @@
             role: "Funded Trader",
             company: {
                 name: "For Traders",
-                logo: "/images/fortraders.webp",
+                logo: {
+                    src: "/images/fortraders.webp",
+                    width: 32,
+                    height: 32
+                },
                 url: "https://app.fortraders.com/trading/new-challenge?affiliateCode=SHELDON"
             }
         },
         {
-            period: "2024 - Present",
+            period: "2024 - Today",
             role: "Funded Trader",
             company: {
                 name: "Topstep",
-                logo: "/images/topstep.webp",
+                logo: {
+                    src: "/images/topstep.webp",
+                    width: 32,
+                    height: 32
+                },
                 url: "https://www.topstep.com"
+            }
+        },
+        {
+            period: "2025 - Today",
+            role: "Founder",
+            company: {
+                name: "PercentBet",
+                logo: {
+                    src: "/images/percentbet.webp",
+                    width: 72,
+                    height: 32
+                },
+                url: "https://percentbet.com"
             }
         }
     ];

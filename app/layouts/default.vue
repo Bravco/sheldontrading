@@ -17,9 +17,18 @@
             <slot/>
             <UFooter class="bg-default z-10" :ui="{ left: 'text-xs text-muted' }">
                 <template #left>
-                    &copy; {{ new Date().getFullYear() }} | All rights reserved.
+                    &copy; {{ new Date().getFullYear() }} Sheldon | All rights reserved.
                 </template>
                 <template #right>
+                    <UButton
+                        icon="i-simple-icons-tradingview"
+                        to="https://www.tradingview.com/u/sheldontrading/"
+                        target="_blank"
+                        size="xs"
+                        variant="ghost"
+                        color="neutral"
+                        aria-label="TradingView"
+                    />
                     <UButton
                         icon="i-simple-icons-x"
                         to="https://x.com/sheldontrading"
