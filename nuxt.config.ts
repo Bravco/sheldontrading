@@ -21,6 +21,12 @@ export default defineNuxtConfig({
       ]
     }
   },
+  nitro: {
+    prerender: {
+      routes: [ "/" ],
+      crawlLinks: true
+    }
+  },
   image: {
     provider: process.env.NETLIFY ? "netlify" : "ipx",
     domains: ["sheldon.trading"]

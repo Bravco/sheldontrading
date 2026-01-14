@@ -48,6 +48,10 @@
             to: "/indicators"
         },
         {
+            label: "Strategies",
+            to: "/strategies"
+        },
+        {
             label: "Blog",
             to: "/blog"
         },

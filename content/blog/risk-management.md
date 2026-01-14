@@ -22,6 +22,6 @@ You can be profitable with a 60% win rate at 1:1RR, just as you can with a 20% w
     - **Live acount:** 1-3% of your capital
     - **Prop firms:** 5-10% of **max drawdown**
 
-::info
+::note
 On a funded account, your effective capital is the max drawdown, not the full account size.
 ::

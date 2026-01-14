@@ -1,7 +1,7 @@
 <template>
     <UPage>
         <UPageHero
-            title="Designing Indicators, Building Strategies."
+            title="Designing Indicators, Building Systems."
             description="Here are some custom TradingView indicators that I use to simplify trading."
             :ui="{
                 title: '!mx-0 text-left',
@@ -12,7 +12,7 @@
         <UPageSection v-if="indicators" :ui="{ container: '!pt-0' }">
             <Motion
                 v-for="(indicator, index) in indicators"
-                :key="index"
+                :key="indicator.id"
                 :initial="{ opacity: 0, transform: 'translateY(10px)' }"
                 :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
                 :transition="{ delay: 0.2 * index }"
