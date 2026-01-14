@@ -13,7 +13,7 @@
             <NuxtImg
                 :src="post.image"
                 :alt="post.title"
-                class="w-full h-75 object-cover object-center rounded-lg border border-default"
+                class="w-full h-80 object-cover object-center rounded-lg border border-default"
             />
             <h1 class="text-4xl text-center font-medium max-w-3xl mx-auto mt-4">{{ post.title }}</h1>
             <p class="text-muted text-center max-w-2xl mx-auto">{{ post.description }}</p>

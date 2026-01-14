@@ -30,7 +30,7 @@
                     <NuxtImg
                         :src="indicator.image"
                         :alt="indicator.title"
-                        class="w-full h-48 object-cover rounded-lg border border-default"
+                        class="w-full aspect-video object-cover rounded-lg border border-default"
                     />
                     <template #leading>
                         <span class="text-xs text-muted">
