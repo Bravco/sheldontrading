@@ -33,5 +33,5 @@
 </template>
 
 <script lang="ts" setup>
-    const { data: posts } = await useLazyAsyncData("posts", () => queryCollection("blog").order("date", "DESC").all());
+    const { data: posts } = await useAsyncData("posts", () => queryCollection("blog").order("date", "DESC").all());
 </script>

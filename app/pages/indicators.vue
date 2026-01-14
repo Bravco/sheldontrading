@@ -57,5 +57,5 @@
 </template>
 
 <script lang="ts" setup>
-    const { data: indicators } = await useLazyAsyncData("indicators", () => queryCollection("indicators").all());
+    const { data: indicators } = await useAsyncData("indicators", () => queryCollection("indicators").all());
 </script>

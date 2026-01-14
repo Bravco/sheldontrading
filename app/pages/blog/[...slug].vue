@@ -31,11 +31,11 @@
 <script lang="ts" setup>
     const route = useRoute();
 
-    const { data: post } = await useLazyAsyncData(route.path, () =>
+    const { data: post } = await useAsyncData(route.path, () =>
         queryCollection("blog").path(route.path).first()
     );
 
-    const { data: surround } = await useLazyAsyncData(`${route.path}-surround`, () =>
+    const { data: surround } = await useAsyncData(`${route.path}-surround`, () =>
         queryCollectionItemSurroundings("blog", route.path, { fields: [ "description" ] })
     );
 
