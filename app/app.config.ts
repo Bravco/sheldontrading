@@ -18,5 +18,22 @@ export default defineAppConfig({
                 }
             }
         }
+    },
+    footer: {
+        links: [
+            {
+                icon: "i-simple-icons-tradingview",
+                to: "https://www.tradingview.com/u/sheldontrading/",
+                target: "_blank",
+                "aria-label": "Sheldon on TradingView"
+            },
+            {
+                icon: "i-simple-icons-x",
+                to: "https://x.com/sheldontrading",
+                target: "_blank",
+                "aria-label": "Sheldon on Twitter"
+
+            }
+        ]
     }
 });
