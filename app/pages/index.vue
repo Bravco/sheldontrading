@@ -5,6 +5,6 @@
             <HomeAbout/>
             <HomeExperience/>
         </UPageSection>
-        <HomeBlog/>
+        <HomeLatest/>
     </UPage>
 </template>

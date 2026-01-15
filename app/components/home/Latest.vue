@@ -8,14 +8,15 @@
             description: 'text-left mt-2 text-sm sm:text-md lg:text-sm text-muted'
         }"
     >
-        <UBlogPosts v-if="posts" orientation="vertical" class="lg:gap-y-4 gap-4">
+        <UBlogPosts v-if="latest" orientation="vertical" class="lg:gap-y-4 gap-4">
             <UBlogPost
-                v-for="(post, index) in posts"
+                v-for="(post, index) in latest"
                 :key="index"
                 orientation="horizontal"
                 variant="naked"
                 :to="post.path"
                 v-bind="post"
+                :authors="undefined"
                 :ui="{
                     root: 'group relative lg:items-start lg:flex ring-0 hover:ring-0',
                     body: '!px-0',
@@ -40,7 +41,15 @@
 </template>
 
 <script lang="ts" setup>
-    const { data: posts } = await useAsyncData("home-posts", () =>
-        queryCollection("blog").order("date", "DESC").limit(3).all()
-    );
+    const { data: latest } = await useAsyncData("latest", async () => {
+        const [blog, strategies] = await Promise.all([
+            queryCollection("blog").order("date", "DESC").limit(3).all(),
+            queryCollection("strategies").order("date", "DESC").limit(3).all()
+        ]);
+
+        return [...blog, ...strategies].sort((a, b) =>
+            new Date(b.date as string).getTime() - 
+            new Date(a.date as string).getTime()
+        ).slice(0, 3);
+    });
 </script>
