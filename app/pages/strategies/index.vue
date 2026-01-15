@@ -45,6 +45,6 @@
 
 <script lang="ts" setup>
     const { data: strategies } = await useAsyncData("strategies", () =>
-        queryCollection("strategies").all()
+        queryCollection("strategies").order("date", "DESC").all()
     );
 </script>
