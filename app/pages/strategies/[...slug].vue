@@ -51,4 +51,15 @@
     const { data: surround } = await useAsyncData(`${route.path}-surround`, () =>
         queryCollectionItemSurroundings("strategies", route.path, { fields: [ "description" ] })
     );
+
+    if (strategy.value) {
+        useSeoMeta({
+            title: strategy.value.title,
+            ogTitle: strategy.value.title,
+            description: strategy.value.description,
+            ogDescription: strategy.value.description,
+            ogImage: strategy.value.image,
+            twitterCard: "summary_large_image"
+        });
+    }
 </script>

@@ -1,18 +1,12 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-  modules: [
-    "@nuxt/ui",
-    "@nuxt/image",
-    "@nuxt/content",
-    "motion-v/nuxt"
-  ],
+  modules: ["@nuxt/ui", "@nuxt/image", "@nuxt/content", "motion-v/nuxt"],
   css: ["~/assets/css/main.css"],
   app: {
     head: {
-      htmlAttrs: {
-        lang: "en"
-      },
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+      htmlAttrs: { lang: "en" },
       title: "@sheldontrading",
       meta: [
         { name: "title", content: "@sheldontrading" },
