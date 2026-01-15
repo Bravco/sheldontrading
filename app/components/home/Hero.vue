@@ -17,7 +17,7 @@
                     width="72"
                     height="72"
                     alt="Profile Picture"
-                    class="size-18 ring ring-default ring-offset-3 ring-offset-bg"
+                    class="size-18 ring ring-primary ring-offset-3 ring-offset-bg"
                 />
             </Motion>
         </template>
@@ -28,7 +28,7 @@
                 :animate="{ scale: 1, opacity: 1, filter: 'blur(0px)' }"
                 :transition="{ duration: 0.6, delay: 0.1 }"
             >
-                Hey, I'm Sheldon Funded Trader
+                Hey, I'm <span class="text-primary">Sheldon</span> Funded Trader
             </Motion>
         </template>
 
