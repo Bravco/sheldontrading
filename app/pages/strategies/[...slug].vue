@@ -56,9 +56,12 @@
         useSeoMeta({
             title: strategy.value.title,
             ogTitle: strategy.value.title,
+            twitterTitle: strategy.value.title,
             description: strategy.value.description,
             ogDescription: strategy.value.description,
+            twitterDescription: strategy.value.description,
             ogImage: strategy.value.image,
+            twitterImage: strategy.value.image,
             twitterCard: "summary_large_image"
         });
     }
