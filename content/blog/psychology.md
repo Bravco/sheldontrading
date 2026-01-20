@@ -39,3 +39,5 @@ Overall, you need to adopt an **Abundance Mindset**, which is a belief that ther
 Reflecting on your past trades is where the growth happens.
 
 A trading journal will help you determine your perfect **A+ setup** and see which variables worsen your probability.
+
+[FREE Trading Journal Notion Template](https://wholesale-tennis-ed2.notion.site/Forever-Model-Trading-Journal-2eef2c74216180faad34ff48abd20e53?source=copy_link){:target="_blank"}
