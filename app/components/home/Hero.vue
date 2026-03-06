@@ -28,7 +28,7 @@
                 :animate="{ scale: 1, opacity: 1, filter: 'blur(0px)' }"
                 :transition="{ duration: 0.6, delay: 0.1 }"
             >
-                Hey, I'm <span class="text-primary">Sheldon</span> Funded Trader
+                Hey, I'm <span class="text-primary">Andrew</span> Funded Trader
             </Motion>
         </template>
 

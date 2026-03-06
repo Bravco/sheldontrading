@@ -55,11 +55,6 @@
         {
             label: "Blog",
             to: "/blog"
-        },
-        {
-            label: "Twitter",
-            to: "https://x.com/sheldontrading",
-            target: "_blank"
         }
     ]);
 </script>

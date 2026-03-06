@@ -7,10 +7,10 @@ export default defineNuxtConfig({
     head: {
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
       htmlAttrs: { lang: "en" },
-      title: "@sheldontrading",
+      title: "Andrew Trades",
       meta: [
-        { name: "title", content: "@sheldontrading" },
-        { name: "description", content: "I am a funded $NQ scalper focused on catching small, consistent moves rather than chasing large trends." },
+        { name: "title", content: "Andrew Trades" },
+        { name: "description", content: "I am Andrew, a funded $NQ scalper focused on catching small, consistent moves rather than chasing large trends." },
         { name: "keywords", content: "trading, trader, funded trader, portfolio" }
       ]
     }
@@ -23,6 +23,6 @@ export default defineNuxtConfig({
   },
   image: {
     provider: process.env.NETLIFY ? "netlify" : "ipx",
-    domains: ["sheldon.trading"]
+    domains: ["sheldon.trading", "andrewtrades.com"]
   }
 })

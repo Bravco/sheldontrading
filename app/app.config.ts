@@ -22,17 +22,23 @@ export default defineAppConfig({
     footer: {
         links: [
             {
-                icon: "i-simple-icons-tradingview",
-                to: "https://www.tradingview.com/u/sheldontrading/",
+                icon: "i-simple-icons-youtube",
+                to: "https://www.youtube.com/@andrewtradess",
                 target: "_blank",
-                "aria-label": "Sheldon on TradingView"
+                "aria-label": "Andrew on YouTube"
             },
             {
                 icon: "i-simple-icons-x",
-                to: "https://x.com/sheldontrading",
+                to: "https://x.com/AndrewTradesNQ",
                 target: "_blank",
-                "aria-label": "Sheldon on Twitter"
+                "aria-label": "Andrew on Twitter"
 
+            },
+            {
+                icon: "i-simple-icons-tradingview",
+                to: "https://www.tradingview.com/u/AndrewTradesNQ/",
+                target: "_blank",
+                "aria-label": "Andrew on TradingView"
             }
         ]
     }

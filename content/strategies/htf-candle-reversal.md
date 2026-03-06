@@ -10,12 +10,12 @@ description: Uses higher-timeframe candle behavior to anticipate reversals and a
 image: /images/indicators/htf-candles.webp
 authors: [
     {
-        name: Sheldon,
-        to: https://x.com/sheldontrading,
+        name: Andrew,
+        to: https://www.youtube.com/@andrewtradess,
         target: _blank,
         avatar: {
             src: /images/profile-picture.webp,
-            alt: Sheldon
+            alt: Andrew
         }
     },
     {

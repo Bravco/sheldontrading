@@ -52,7 +52,7 @@
                     width: 32,
                     height: 32
                 },
-                url: "https://app.fortraders.com/trading/new-challenge?affiliateCode=SHELDON"
+                url: "https://app.fortraders.com/trading/new-challenge?affiliateCode=ANDREW"
             }
         },
         {
