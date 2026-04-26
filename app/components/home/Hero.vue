@@ -49,22 +49,16 @@
                 :animate="{ scale: 1, opacity: 1, filter: 'blur(0px)' }"
                 :transition="{ duration: 0.6, delay: 0.5 }"
             >
-                <div class="flex items-center gap-2">
-                    <UButton
-                        label="View Indicators"
-                        to="/indicators"
-                        color="neutral"
-                    />
-                    <UButton
-                        label="Learn Strategies"
-                        to="/strategies"
-                        variant="subtle"
-                        color="neutral"
-                    />
-                </div>
+                <UButton
+                    label="Join Free Discord"
+                    to="https://whop.com/joined/andrewtrades/free-discord-K3M40MjKQwQrgt/app/"
+                    target="_blank"
+                    icon="i-simple-icons-discord"
+                    trailing-icon="i-lucide-arrow-up-right"
+                />
             </Motion>
 
-            <div class="inline-flex gap-x-4 mt-4">
+            <div class="inline-flex gap-x-4">
                 <Motion
                     v-for="(link, index) in footer.links"
                     :key="index"
