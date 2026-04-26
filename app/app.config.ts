@@ -35,11 +35,17 @@ export default defineAppConfig({
 
             },
             {
+                icon: "i-simple-icons-tiktok",
+                to: "https://tiktok.com/@andrewtradess",
+                target: "_blank",
+                "aria-label": "Andrew on TikTok"
+            }
+            /*{
                 icon: "i-simple-icons-tradingview",
                 to: "https://www.tradingview.com/u/AndrewTradesNQ/",
                 target: "_blank",
                 "aria-label": "Andrew on TradingView"
-            }
+            }*/
         ]
     }
 });
