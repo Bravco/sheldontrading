@@ -1,0 +1,5 @@
+author: Andrew
+title: Liquidity
+description: Identifies key buyside and sellside liquidity levels by detecting pivot highs and lows on your chart. Each confirmed pivot is marked with a horizontal line that extends to the right until the level is swept.
+image: /images/indicators/liquidity.webp
+url: https://www.tradingview.com/script/rvOtBEjy-AndrewTrades-Liquidity/
