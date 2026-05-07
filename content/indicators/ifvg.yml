@@ -1,0 +1,5 @@
+author: Andrew
+title: Inverse Fair Value Gap (iFVG)
+description: AndrewTrades Inverse Fair Value Gap (iFVG) automatically detects and displays Inverted Fair Value Gaps directly on the chart. The indicator first tracks standard bullish and bearish FVGs, then converts them into inverse FVG zones once price closes through the gap, which can be used as support/resistance zones.
+image: /images/indicators/ifvg.webp
+url: https://www.tradingview.com/script/m0c8btcI-AndrewTrades-Inverse-Fair-Value-Gap-iFVG/
