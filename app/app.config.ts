@@ -36,7 +36,7 @@ export default defineAppConfig({
             },
             {
                 icon: "i-simple-icons-instagram",
-                to: "https://instagram.com/andrewtradess",
+                to: "https://instagram.com/andrewtradessnq",
                 target: "_blank",
                 "aria-label": "Andrew on Instagram"
             },
