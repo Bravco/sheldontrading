@@ -62,6 +62,13 @@
             to: "https://fundednext.com/?fpr=ANDREW"
         },
         {
+            title: "E8 Markets",
+            code: "ANDREW5",
+            discount: 50,
+            image: "/images/firms/e8.webp",
+            to: "https://e8markets.com/d/ANDREW5"
+        },
+        {
             title: "FX Replay",
             code: "ANDREJ",
             discount: 30,
