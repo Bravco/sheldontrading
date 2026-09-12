@@ -1,7 +1,7 @@
 <template>
     <UPageHero
         :ui="{
-            headline: 'flex items-center justify-center',
+            headline: 'flex flex-col items-center justify-center gap-4',
             title: 'text-shadow-md max-w-lg mx-auto',
             links: 'mt-4 flex-col justify-center items-center'
         }"
@@ -19,6 +19,19 @@
                     alt="Profile Picture"
                     class="size-18 ring ring-primary ring-offset-3 ring-offset-bg"
                 />
+            </Motion>
+            <Motion
+                :initial="{ scale: 1.1, opacity: 0, filter: 'blur(20px)' }"
+                :animate="{ scale: 1, opacity: 1, filter: 'blur(0px)' }"
+                :transition="{ duration: 0.6, delay: 0.1 }"
+            >
+                <UBadge color="success" variant="soft">
+                    <span class="relative flex h-2 w-2">
+                        <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75"></span>
+                        <span class="relative inline-flex h-2 w-2 rounded-full bg-green-500"></span>
+                    </span>
+                    Live Trading Everyday at <b>9:30 AM EST</b>
+                </UBadge>
             </Motion>
         </template>
 
