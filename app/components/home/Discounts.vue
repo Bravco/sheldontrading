@@ -10,6 +10,29 @@
     >
         <UPageGrid>
             <UPageCard
+                to="https://www.propfirmmatch.com/?a_aid=ANDREW"
+                target="_blank"
+                spotlight
+            >
+                <template #leading>
+                    <NuxtImg
+                        src="/images/firms/propfirmmatch.webp"
+                        alt="Prop Firm Match"
+                        width="32"
+                        height="32"
+                        loading="lazy"
+                        class="max-w-18 max-h-8 object-contain rounded"
+                    />
+                </template>
+                <template #title>
+                    <span>Prop Firm Match</span>
+                    <UIcon name="i-lucide-arrow-up-right" class="size-3 ml-1"/>
+                </template>
+                <template #description>
+                   Earn <b>Loyalty Points</b>
+                </template>
+            </UPageCard>
+            <UPageCard
                 v-for="(card, index) in cards"
                 :key="index"
                 v-bind="card"
@@ -60,6 +83,13 @@
             discount: 50,
             image: "/images/firms/fundednext.webp",
             to: "https://fundednext.com/?fpr=ANDREW"
+        },
+        {
+            title: "Blue Guardian",
+            code: "ANDREW",
+            discount: 50,
+            image: "/images/firms/blueguardian.webp",
+            to: "https://blueguardian.com/?afmc=ANDREW"
         },
         {
             title: "E8 Markets",
