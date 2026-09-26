@@ -56,7 +56,7 @@
             role: "Funded Trader",
             company: {
                 name: "Topstep",
-                image: "/images/firms/topstep.webp",
+                image: "/images/firms/topstep-gold.webp",
                 url: "https://www.topstep.com"
             }
         },

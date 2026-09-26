@@ -29,7 +29,7 @@
                     <UIcon name="i-lucide-arrow-up-right" class="size-3 ml-1"/>
                 </template>
                 <template #description>
-                   Earn <b>Loyalty Points</b>
+                   Partnership
                 </template>
             </UPageCard>
             <UPageCard
@@ -64,18 +64,25 @@
 <script lang="ts" setup>
     const cards = ref([
         {
-            title: "For Traders",
-            code: "ANDREW",
-            discount: 25,
-            image: "/images/firms/fortraders.webp",
-            to: "https://app.fortraders.com/trading/new-challenge?affiliateCode=ANDREW"
-        },
-        {
             title: "Lucid Trading",
             code: "ANDREW",
             discount: 50,
             image: "/images/firms/lucidtrading.webp",
             to: "https://lucidtrading.com/ref/andrew"
+        },
+        {
+            title: "Topstep",
+            code: "TS-FBVDIM3B1XF3U",
+            discount: 15,
+            image: "/images/firms/topstep.webp",
+            to: "https://dashboard.topstep.com/"
+        },
+        {
+            title: "For Traders",
+            code: "ANDREW",
+            discount: 25,
+            image: "/images/firms/fortraders.webp",
+            to: "https://app.fortraders.com/trading/new-challenge?affiliateCode=ANDREW"
         },
         {
             title: "FundedNext",
