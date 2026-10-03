@@ -106,11 +106,18 @@
             to: "https://e8markets.com/d/ANDREW5"
         },
         {
-            title: "FX Replay",
-            code: "ANDREJ",
-            discount: 30,
-            image: "/images/firms/fxreplay.webp",
-            to: "https://www.fxreplay.com/?utm_campaign=affiliate_program_3030&utm_medium=affiliate&utm_source=rewardful&via=andrej"
+            title: "Vest",
+            code: "ANDREW",
+            discount: 5,
+            image: "/images/firms/vest.webp",
+            to: "https://next.vestmarkets.com/r/andrew"
+        },
+        {
+            title: "Breakout",
+            code: "ANDREW",
+            discount: 5,
+            image: "/images/firms/breakout.webp",
+            to: "https://breakoutprop.com/"
         },
         {
             title: "Tradesyncer",
@@ -118,6 +125,13 @@
             discount: 30,
             image: "/images/firms/tradesyncer.webp",
             to: "https://app.tradesyncer.com/?ref=TSDFDA6B40"
-        }
+        },
+        {
+            title: "FX Replay",
+            code: "ANDREJ",
+            discount: 30,
+            image: "/images/firms/fxreplay.webp",
+            to: "https://www.fxreplay.com/?utm_campaign=affiliate_program_3030&utm_medium=affiliate&utm_source=rewardful&via=andrej"
+        },
     ]);
 </script>
