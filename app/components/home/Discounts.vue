@@ -117,7 +117,7 @@
             code: "ANDREW",
             discount: 5,
             image: "/images/firms/breakout.webp",
-            to: "https://breakoutprop.com/"
+            to: "https://www.breakoutprop.com/join/andrew/"
         },
         {
             title: "Tradesyncer",
