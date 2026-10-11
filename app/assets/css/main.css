@@ -3,6 +3,15 @@
 
 @source "../../../content/**/*";
 
+@theme {
+    --animate-border-travel: border-travel 3s linear infinite;
+
+    @keyframes border-travel {
+        from { offset-distance: 0%; }
+        to { offset-distance: 100%; }
+    }
+}
+
 :root {
     --ui-container: var(--container-4xl);
 }

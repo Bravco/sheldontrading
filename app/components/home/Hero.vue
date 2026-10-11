@@ -62,13 +62,25 @@
                 :animate="{ scale: 1, opacity: 1, filter: 'blur(0px)' }"
                 :transition="{ duration: 0.6, delay: 0.5 }"
             >
-                <UButton
-                    label="Join Free Discord"
-                    to="https://whop.com/joined/andrewtrades/free-discord-K3M40MjKQwQrgt/app/"
-                    target="_blank"
-                    icon="i-simple-icons-discord"
-                    trailing-icon="i-lucide-arrow-up-right"
-                />
+                <div
+                    class="group relative inline-flex overflow-hidden rounded-lg bg-primary/20 p-0.5 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/40"
+                >
+                    <span
+                        aria-hidden="true"
+                        class="absolute left-0 top-0 size-20 animate-border-travel motion-reduce:hidden [offset-path:rect(0_100%_100%_0_round_0.5rem)] [offset-rotate:0deg] bg-[radial-gradient(circle,white_0%,var(--ui-primary)_30%,transparent_70%)]"
+                    />
+                    <UButton
+                        class="relative z-10 overflow-hidden transition-transform duration-300 active:scale-95
+                            before:pointer-events-none before:absolute before:inset-y-0 before:-left-full before:w-1/2 before:-skew-x-20
+                            before:bg-white/25 before:transition-none
+                            group-hover:before:translate-x-[400%] group-hover:before:transition-transform group-hover:before:duration-700 motion-reduce:before:hidden"
+                        label="Join Free Discord"
+                        to="https://whop.com/joined/andrewtrades/free-discord-K3M40MjKQwQrgt/app/"
+                        target="_blank"
+                        icon="i-simple-icons-discord"
+                        trailing-icon="i-lucide-arrow-up-right"
+                    />
+                </div>
             </Motion>
 
             <div class="inline-flex gap-x-4">
@@ -89,10 +101,14 @@
             </div>
         </template>
 
-        <UMarquee class="py-2 -mx-8 sm:-mx-12 lg:-mx-16 [--duration:40s]">
+        <UMarquee
+            class="py-6 -mx-8 sm:-mx-12 lg:-mx-16 [--duration:50s] [--gap:--spacing(5)]"
+            :ui="{ root: 'items-center' }"
+        >
             <Motion
                 v-for="index in 9"
                 :key="index"
+                class="shrink-0"
                 :initial="{ scale: 1.1, opacity: 0, filter: 'blur(20px)' }"
                 :animate="{ scale: 1, opacity: 1, filter: 'blur(0px)' }"
                 :transition="{ duration: 0.6, delay: index * 0.1 }"
@@ -100,10 +116,11 @@
                 <NuxtImg
                     :src="`/images/hero/trade-${index}.webp`"
                     :alt="`Trade Example ${index}`"
-                    width="250"
-                    height="250"
+                    width="721"
+                    height="901"
+                    sizes="192px sm:224px lg:288px"
                     loading="lazy"
-                    class="aspect-square object-cover rounded-lg border border-default"
+                    class="w-48 sm:w-56 lg:w-72 aspect-721/901 object-cover rounded-lg border border-default shadow-lg"
                     :class="index % 2 === 0 ? '-rotate-2' : 'rotate-2'"
                 />
             </Motion>

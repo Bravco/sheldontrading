@@ -19,9 +19,9 @@
         }"
     >
         <template #description>
-            As a <b>funded $NQ scalper</b>,
-            I specialize in small-range market movements rather than long swing trades.
-            My trading philosophy prioritizes taking shorter high-probability reversals over emotional trend-chasing.
+            NQ scalper trading since <b>September 2023</b>,
+            specializing in high-probability low RR setups with a <b>~70% win rate</b> and <b>averge 1.5 RR</b>.
+            Funded with all major prop firms.
         </template>
     </UPageSection>
 </template>

@@ -9,62 +9,68 @@
         }"
     >
         <UPageGrid>
-            <UPageCard
-                to="https://www.propfirmmatch.com/?a_aid=ANDREW"
-                target="_blank"
-                spotlight
+            <div
+                v-for="card in cards"
+                :key="card.title"
+                class="contents"
+                :style="{ '--card-color': card.accent }"
             >
-                <template #leading>
-                    <NuxtImg
-                        src="/images/firms/propfirmmatch.webp"
-                        alt="Prop Firm Match"
-                        width="32"
-                        height="32"
-                        loading="lazy"
-                        class="max-w-18 max-h-8 object-contain rounded"
-                    />
-                </template>
-                <template #title>
-                    <span>Prop Firm Match</span>
-                    <UIcon name="i-lucide-arrow-up-right" class="size-3 ml-1"/>
-                </template>
-                <template #description>
-                   Partnership
-                </template>
-            </UPageCard>
-            <UPageCard
-                v-for="(card, index) in cards"
-                :key="index"
-                v-bind="card"
-                target="_blank"
-                spotlight
-            >
-                <template #leading>
-                    <NuxtImg
-                        :src="card.image"
-                        :alt="card.title"
-                        width="32"
-                        height="32"
-                        loading="lazy"
-                        class="max-w-18 max-h-8 object-contain rounded"
-                    />
-                </template>
-                <template #title>
-                    <span>{{ card.title }}</span>
-                    <UIcon name="i-lucide-arrow-up-right" class="size-3 ml-1"/>
-                </template>
-                <template #description>
-                    Code <b>{{ card.code }}</b> for <b>{{ card.discount }}%</b> off
-                </template>
-            </UPageCard>
+                <UPageCard
+                    :to="card.to"
+                    target="_blank"
+                    spotlight
+                    :class="cardClass"
+                >
+                    <template #leading>
+                        <NuxtImg
+                            :src="card.image"
+                            :alt="card.title"
+                            width="32"
+                            height="32"
+                            loading="lazy"
+                            class="max-w-18 max-h-8 object-contain rounded transition-transform duration-300 motion-safe:group-hover:scale-110 motion-safe:group-hover:-rotate-3"
+                        />
+                    </template>
+                    <template #title>
+                        <span>{{ card.title }}</span>
+                        <UIcon
+                            name="i-lucide-arrow-up-right"
+                            class="size-3 ml-1 transition duration-300 motion-safe:group-hover:translate-x-0.5 motion-safe:group-hover:-translate-y-0.5 group-hover:text-(--card-color)"
+                        />
+                    </template>
+                    <template #description>
+                        <template v-if="card.code">
+                            Code <b>{{ card.code }}</b> for <b>{{ card.discount }}%</b> off
+                        </template>
+                        <template v-else>
+                            Partnership
+                        </template>
+                    </template>
+                </UPageCard>
+            </div>
         </UPageGrid>
     </UPageSection>
 </template>
 
 <script lang="ts" setup>
+    const cardClass = [
+        "group transition duration-300",
+        "bg-(color:--card-color)/6 ring-2 ring-(color:--card-color)/30",
+        "hover:bg-(color:--card-color)/12 hover:ring-(color:--card-color)/70",
+        "hover:shadow-xl hover:shadow-(color:--card-color)/30 motion-safe:hover:-translate-y-1",
+        "[--spotlight-color:color-mix(in_oklab,var(--card-color)_35%,transparent)]"
+    ].join(" ");
+
     const cards = ref([
         {
+            title: "Prop Firm Match",
+            accent: "#c4559c",
+            image: "/images/firms/propfirmmatch.webp",
+            to: "https://www.propfirmmatch.com/?a_aid=ANDREW"
+        },
+        {
             title: "Lucid Trading",
+            accent: "#97a3b5",
             code: "ANDREW",
             discount: 50,
             image: "/images/firms/lucidtrading.webp",
@@ -72,6 +78,7 @@
         },
         {
             title: "Topstep",
+            accent: "#ffffff",
             code: "TS-FBVDIM3B1XF3U",
             discount: 15,
             image: "/images/firms/topstep.webp",
@@ -79,6 +86,7 @@
         },
         {
             title: "For Traders",
+            accent: "#d0d733",
             code: "ANDREW",
             discount: 25,
             image: "/images/firms/fortraders.webp",
@@ -86,13 +94,15 @@
         },
         {
             title: "FundedNext",
+            accent: "#6d5ecd",
             code: "ANDREW",
-            discount: 50,
+            discount: 55,
             image: "/images/firms/fundednext.webp",
             to: "https://fundednext.com/?fpr=ANDREW"
         },
         {
             title: "Blue Guardian",
+            accent: "#3b85ab",
             code: "ANDREW",
             discount: 50,
             image: "/images/firms/blueguardian.webp",
@@ -100,6 +110,7 @@
         },
         {
             title: "E8 Markets",
+            accent: "#66bccd",
             code: "ANDREW5",
             discount: 50,
             image: "/images/firms/e8.webp",
@@ -107,6 +118,7 @@
         },
         {
             title: "Vest",
+            accent: "#9dcbbc",
             code: "ANDREW",
             discount: 5,
             image: "/images/firms/vest.webp",
@@ -114,6 +126,7 @@
         },
         {
             title: "Breakout",
+            accent: "#0b73a8",
             code: "ANDREW",
             discount: 5,
             image: "/images/firms/breakout.webp",
@@ -121,6 +134,7 @@
         },
         {
             title: "Tradesyncer",
+            accent: "#4459eb",
             code: "ANDREW",
             discount: 30,
             image: "/images/firms/tradesyncer.webp",
@@ -128,10 +142,11 @@
         },
         {
             title: "FX Replay",
+            accent: "#feffff",
             code: "ANDREJ",
             discount: 30,
             image: "/images/firms/fxreplay.webp",
             to: "https://www.fxreplay.com/?utm_campaign=affiliate_program_3030&utm_medium=affiliate&utm_source=rewardful&via=andrej"
-        },
+        }
     ]);
 </script>
