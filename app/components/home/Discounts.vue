@@ -63,12 +63,6 @@
 
     const cards = ref([
         {
-            title: "Prop Firm Match",
-            accent: "#c4559c",
-            image: "/images/firms/propfirmmatch.webp",
-            to: "https://www.propfirmmatch.com/?a_aid=ANDREW"
-        },
-        {
             title: "Lucid Trading",
             accent: "#97a3b5",
             code: "ANDREW",
