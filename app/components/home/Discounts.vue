@@ -79,14 +79,6 @@
             to: "https://dashboard.topstep.com/"
         },
         {
-            title: "For Traders",
-            accent: "#d0d733",
-            code: "ANDREW",
-            discount: 25,
-            image: "/images/firms/fortraders.webp",
-            to: "https://app.fortraders.com/trading/new-challenge?affiliateCode=ANDREW"
-        },
-        {
             title: "FundedNext",
             accent: "#6d5ecd",
             code: "ANDREW",
