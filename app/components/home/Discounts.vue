@@ -12,14 +12,24 @@
             <div
                 v-for="card in cards"
                 :key="card.title"
-                class="contents"
+                :class="card.featured ? featuredWrapperClass : 'contents'"
                 :style="{ '--card-color': card.accent }"
             >
+                <UBadge
+                    v-if="card.featured"
+                    label="Top pick"
+                    icon="i-lucide-star"
+                    color="warning"
+                    variant="solid"
+                    size="sm"
+                    class="absolute -top-2.5 right-4 z-10 shadow-lg"
+                />
+
                 <UPageCard
                     :to="card.to"
                     target="_blank"
                     spotlight
-                    :class="cardClass"
+                    :class="card.featured ? featuredCardClass : cardClass"
                 >
                     <template #leading>
                         <NuxtImg
@@ -61,14 +71,37 @@
         "[--spotlight-color:color-mix(in_oklab,var(--card-color)_35%,transparent)]"
     ].join(" ");
 
+    const featuredWrapperClass = [
+        "featured-border relative h-full",
+        "transition duration-300",
+        "hover:shadow-xl hover:shadow-(color:--card-color)/30 motion-safe:hover:-translate-y-1"
+    ].join(" ");
+
+    const featuredCardClass = [
+        "featured-inner featured-shimmer group relative h-full overflow-hidden transition duration-300 ring-0",
+        "bg-[color-mix(in_oklab,var(--card-color)_8%,var(--ui-bg))]",
+        "hover:bg-[color-mix(in_oklab,var(--card-color)_14%,var(--ui-bg))]",
+        "[--spotlight-color:color-mix(in_oklab,var(--card-color)_35%,transparent)]"
+    ].join(" ");
+
     const cards = ref([
         {
             title: "Lucid Trading",
             accent: "#97a3b5",
             code: "ANDREW",
-            discount: 50,
+            discount: 30,
             image: "/images/firms/lucidtrading.webp",
-            to: "https://lucidtrading.com/ref/andrew"
+            to: "https://lucidtrading.com/ref/andrew",
+            featured: true
+        },
+        {
+            title: "Vest",
+            accent: "#00d98e",
+            code: "ANDREW",
+            discount: 5,
+            image: "/images/firms/vest.webp",
+            to: "https://next.vestmarkets.com/r/andrew",
+            featured: true
         },
         {
             title: "Topstep",
@@ -103,14 +136,6 @@
             to: "https://e8markets.com/d/ANDREW5"
         },
         {
-            title: "Vest",
-            accent: "#9dcbbc",
-            code: "ANDREW",
-            discount: 5,
-            image: "/images/firms/vest.webp",
-            to: "https://next.vestmarkets.com/r/andrew"
-        },
-        {
             title: "Breakout",
             accent: "#0b73a8",
             code: "ANDREW",
@@ -136,3 +161,63 @@
         }
     ]);
 </script>
+
+<style>
+    @property --featured-angle {
+        syntax: "<angle>";
+        inherits: false;
+        initial-value: 0deg;
+    }
+
+    .featured-border {
+        padding: 2px;
+        border-radius: var(--radius-xl, 0.75rem);
+        background:
+            conic-gradient(
+                from var(--featured-angle),
+                transparent 0%,
+                var(--card-color) 20%,
+                #fff 30%,
+                var(--card-color) 40%,
+                transparent 60%
+            ),
+            color-mix(in oklab, var(--card-color) 25%, transparent);
+        animation: featured-spin 4s linear infinite;
+    }
+
+    .featured-inner {
+        border-radius: calc(var(--radius-xl, 0.75rem) - 2px);
+    }
+
+    .featured-shimmer::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(110deg, transparent 40%, rgba(255, 255, 255, 0.2) 50%, transparent 60%);
+        background-size: 250% 100%;
+        animation: featured-shimmer 4s ease-in-out infinite;
+        pointer-events: none;
+    }
+
+    @keyframes featured-spin {
+        to {
+            --featured-angle: 360deg;
+        }
+    }
+
+    @keyframes featured-shimmer {
+        from {
+            background-position: 150% 0;
+        }
+        to {
+            background-position: -50% 0;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .featured-border,
+        .featured-shimmer::after {
+            animation: none;
+        }
+    }
+</style>
