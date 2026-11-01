@@ -63,6 +63,9 @@
 </template>
 
 <script lang="ts" setup>
+    const colorMode = useColorMode();
+    const isLight = computed(() => colorMode.value === "light");
+
     const cardClass = [
         "group transition duration-300",
         "bg-(color:--card-color)/6 ring-2 ring-(color:--card-color)/30",
@@ -84,7 +87,7 @@
         "[--spotlight-color:color-mix(in_oklab,var(--card-color)_35%,transparent)]"
     ].join(" ");
 
-    const cards = ref([
+    const cards = computed(() => [
         {
             title: "Lucid Trading",
             accent: "#97a3b5",
@@ -105,7 +108,7 @@
         },
         {
             title: "Topstep",
-            accent: "#ffffff",
+            accent: isLight.value ? "#000000" : "#ffffff",
             code: "TS-FBVDIM3B1XF3U",
             discount: 15,
             image: "/images/firms/topstep.webp",
@@ -153,7 +156,7 @@
         },
         {
             title: "FX Replay",
-            accent: "#feffff",
+            accent: isLight.value ? "#000000" : "#ffffff",
             code: "ANDREJ",
             discount: 30,
             image: "/images/firms/fxreplay.webp",
