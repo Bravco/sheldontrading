@@ -98,6 +98,15 @@
             featured: true
         },
         {
+            title: "Tradeify",
+            accent: "#10fa57",
+            code: "ANDREW",
+            discount: 40,
+            image: "/images/firms/tradeify.webp",
+            to: "https://tradeify.co/?ref=ANDREW",
+            featured: true
+        },
+        {
             title: "Vest",
             accent: "#00d98e",
             code: "ANDREW",
