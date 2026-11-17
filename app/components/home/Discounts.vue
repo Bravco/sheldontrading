@@ -118,7 +118,7 @@
         {
             title: "Topstep",
             accent: isLight.value ? "#000000" : "#ffffff",
-            code: "TS-FBVDIM3B1XF3U",
+            code: "ANDREWTRADESNQ",
             discount: 15,
             image: "/images/firms/topstep.webp",
             to: "https://dashboard.topstep.com/"
